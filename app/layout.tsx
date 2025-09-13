@@ -49,8 +49,9 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
+          themes={["light", "dark"]}
+          // enableSystem
+          // disableTransitionOnChange
         >
           {children}
         </ThemeProvider>
